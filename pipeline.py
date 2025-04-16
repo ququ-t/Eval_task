@@ -3,8 +3,8 @@ import json
 from datasets import load_dataset
 
 def main():
-    # DeepSeek Reasoner API setup
-    client = OpenAI(api_key="sk-4d5824bb72d54528bd45943def4688db", base_url="https://api.deepseek.com")
+    # DeepSeek Reasoner API setup. Replace here with the deepseek api when need to run it.
+    client = OpenAI(api_key="MY_API_KEY", base_url="https://api.deepseek.com")
 
     # Randomly load 20 MMLU samples
     dataset = load_dataset("cais/mmlu", "all", split="test").shuffle(seed=42).select(range(20))
