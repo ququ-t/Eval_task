@@ -6,7 +6,8 @@ from typing import List
 from datasets import load_dataset
 from openai import OpenAI
 
-client = OpenAI(api_key="sk-4d5824bb72d54528bd45943def4688db", base_url="https://api.deepseek.com")
+# Replace with the api key
+client = OpenAI(api_key="MY_API_KEY", base_url="https://api.deepseek.com")
 
 class Node:
     def __init__(self, state, parent=None):
