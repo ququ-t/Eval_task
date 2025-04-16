@@ -183,7 +183,7 @@ def main():
     print(f"\nOverall Accuracy: {accuracy:.2%}")
 
     output_data = {"results": results, "accuracy": accuracy}
-    with open("mmlu_deepseek_results.json", "w") as f:
+    with open("mmlu_questions_reasoning.json", "w") as f:
         json.dump(output_data, f, indent=2)
     print("\nFinal Output JSON:")
     print(json.dumps(output_data, indent=2))
